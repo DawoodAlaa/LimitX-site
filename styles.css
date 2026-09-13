@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #091322;
-  --bg-deep: #060e1b;
-  --surface: rgba(20, 36, 59, 0.86);
-  --surface-solid: #14243b;
-  --surface-soft: #1c314c;
-  --line: rgba(183, 211, 239, 0.2);
-  --text: #f5f8fc;
-  --muted: #b7c8db;
-  --muted-2: #8ea4bd;
-  --red: #ff4f67;
-  --red-dark: #d42e50;
-  --gold: #f6c84d;
-  --green: #63f0ac;
-  --blue: #4ea9ff;
+  --bg: #08080d;
+  --bg-deep: #050509;
+  --surface: rgba(15, 15, 22, 0.82);
+  --surface-solid: #0f0f16;
+  --surface-soft: #161620;
+  --line: rgba(153, 153, 187, 0.14);
+  --text: #f4f4fc;
+  --muted: #9999bb;
+  --muted-2: #5c5c7a;
+  --red: #e60000;
+  --red-dark: #b30000;
+  --gold: #f5a623;
+  --green: #00c07a;
+  --blue: #5aacff;
   --shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
   color-scheme: dark;
 }
@@ -33,8 +33,8 @@ a { color: inherit; text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
 .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
 .page-glow { position: fixed; z-index: -1; border-radius: 999px; filter: blur(4px); pointer-events: none; }
-.page-glow-one { width: 520px; height: 520px; top: -280px; right: -140px; background: rgba(78, 169, 255, .24); }
-.page-glow-two { width: 440px; height: 440px; left: -280px; top: 720px; background: rgba(255, 79, 103, .16); }
+.page-glow-one { width: 520px; height: 520px; top: -280px; right: -140px; background: rgba(90, 172, 255, .14); }
+.page-glow-two { width: 440px; height: 440px; left: -280px; top: 720px; background: rgba(230, 0, 0, .1); }
 
 .site-header { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; min-width: max-content; }
