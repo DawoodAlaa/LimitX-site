@@ -3,7 +3,7 @@
 
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
   const RELEASE_ROOT = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v';
-  const FALLBACK_VERSION = '1.0.37';
+  const FALLBACK_VERSION = '1.0.38';
   const FALLBACK_NOTES = 'آخر نسخة رسمية من LimitX متاحة للتحميل الآن.';
 
   const byId = (id) => document.getElementById(id);
