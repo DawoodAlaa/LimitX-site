@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dawoodalaa.github.io/LimitX-site/sitemap.xml
