@@ -59,7 +59,7 @@
       releaseNotes.textContent = sourceOk ? (notes || FALLBACK_NOTES) : `آخر نسخة معروفة: ${version}. جرّب التحديث مرة أخرى لاحقًا.`;
     }
 
-    setDownloadLink('download-android', assetUrl(version, 'LimitX-App.apk'), 'تحميل APK');
+    setDownloadLink('download-android', assetUrl(version, `LimitX-App-${version}.apk`), 'تحميل APK');
     setDownloadLink('download-windows', assetUrl(version, 'LimitX-Setup.exe'), 'تحميل Setup');
   }
 
