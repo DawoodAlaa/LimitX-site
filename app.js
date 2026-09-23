@@ -2,8 +2,9 @@
   'use strict';
 
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
-  const RELEASE_ROOT = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v';
-  const FALLBACK_VERSION = '1.0.43';
+  const FALLBACK_VERSION = '1.0.57';
+  const FALLBACK_ANDROID_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.57/LimitX-App-1.0.57.apk';
+  const FALLBACK_WINDOWS_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.57/LimitX-Setup.exe';
   const FALLBACK_NOTES = 'آخر نسخة رسمية من LimitX متاحة للتحميل الآن.';
 
   const byId = (id) => document.getElementById(id);
@@ -14,10 +15,6 @@
     if (/android/.test(userAgent)) return 'android';
     if (/windows/.test(userAgent)) return 'windows';
     return '';
-  }
-
-  function assetUrl(version, fileName) {
-    return `${RELEASE_ROOT}${encodeURIComponent(version)}/${fileName}`;
   }
 
   function setDownloadLink(id, url, label) {
@@ -51,7 +48,7 @@
     }, 120);
   }
 
-  function renderVersion(version, notes, sourceOk) {
+  function renderVersion(version, notes, sourceOk, apkUrl = '', windowsUrl = '') {
     const versionLabel = byId('latest-version');
     const releaseNotes = byId('release-notes');
     if (versionLabel) versionLabel.textContent = `LimitX ${version}`;
@@ -59,8 +56,8 @@
       releaseNotes.textContent = sourceOk ? (notes || FALLBACK_NOTES) : `آخر نسخة معروفة: ${version}. جرّب التحديث مرة أخرى لاحقًا.`;
     }
 
-    setDownloadLink('download-android', assetUrl(version, `LimitX-App-${version}.apk`), 'تحميل APK');
-    setDownloadLink('download-windows', assetUrl(version, 'LimitX-Setup.exe'), 'تحميل Setup');
+    setDownloadLink('download-android', apkUrl || FALLBACK_ANDROID_URL, 'تحميل APK');
+    setDownloadLink('download-windows', windowsUrl || FALLBACK_WINDOWS_URL, 'تحميل Setup');
   }
 
   async function loadVersion() {
@@ -78,11 +75,17 @@
       const version = typeof payload.version === 'string' && /^\d+\.\d+\.\d+$/.test(payload.version)
         ? payload.version
         : FALLBACK_VERSION;
-      renderVersion(version, typeof payload.notes === 'string' ? payload.notes : '', true);
+      renderVersion(
+        version,
+        typeof payload.notes === 'string' ? payload.notes : '',
+        true,
+        typeof payload.apk_url === 'string' ? payload.apk_url : '',
+        typeof payload.windows_url === 'string' ? payload.windows_url : ''
+      );
     } catch (error) {
       // The download links remain useful during a short API outage.
       console.warn('LimitX version check failed:', error);
-      renderVersion(FALLBACK_VERSION, FALLBACK_NOTES, false);
+      renderVersion(FALLBACK_VERSION, FALLBACK_NOTES, false, FALLBACK_ANDROID_URL, FALLBACK_WINDOWS_URL);
     }
   }
 
