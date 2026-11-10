@@ -3,254 +3,281 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101827" />
+    <meta name="theme-color" content="#08080d" />
     <meta
       name="description"
-      content="LimitX برنامج إدارة محل الكاش: الخطوط والليميت والعمولات والجرد والخوارج على Android وWindows. جرّبه 7 أيام مجانًا."
+      content="LimitX برنامج إدارة محل الكاش: الخطوط والليميت والعمولات والجرد والخوارج على Android وWindows. حمّله وجرّبه 7 أيام مجانًا."
     />
     <meta property="og:title" content="LimitX | إدارة محل الكاش من غير دفاتر" />
     <meta
       property="og:description"
-      content="خطوطك وعمولاتك وجرد الدرج في برنامج واحد شغال من غير نت. جرّبه 7 أيام مجانًا."
+      content="خطوطك وعمولاتك وجرد الدرج في برنامج واحد شغال من غير نت. حمّله وجرّبه 7 أيام مجانًا."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://dawoodalaa.github.io/LimitX-site/assets/limitx-icon.png" />
     <title>LimitX | برنامج إدارة محل الكاش</title>
     <link rel="icon" href="assets/limitx-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11" /><path d="m7 11 5 5 5-5" /><path d="M5 20h14" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></symbol>
+      <symbol id="i-desktop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M9 20h6M12 16v4" /></symbol>
+    </svg>
+
     <div class="page-glow page-glow-one"></div>
     <div class="page-glow page-glow-two"></div>
 
     <header class="site-header container">
       <a class="brand" href="#top" aria-label="LimitX - الصفحة الرئيسية">
-        <span class="brand-mark"><img src="assets/limitx-icon.png" alt="" /></span>
+        <span class="brand-mark"><img src="assets/limitx-icon.png" alt="" width="42" height="42" /></span>
         <span>
           <strong>LimitX</strong>
           <small>إدارة محل الكاش</small>
         </span>
       </a>
       <nav class="main-nav" aria-label="التنقل الرئيسي">
-        <a href="#features">المميزات</a>
+        <a href="#screens">البرنامج من جوه</a>
         <a href="#pricing">الأسعار</a>
         <a href="#install">طريقة التثبيت</a>
         <a href="#faq">الأسئلة الشائعة</a>
       </nav>
-      <a class="button button-small button-outline" href="#download">تحميل البرنامج</a>
+      <a class="button button-small button-outline" href="#download" data-dl="auto" data-short="1"><svg class="dl-icon"><use href="#i-download" /></svg><span data-label>تحميل البرنامج</span></a>
     </header>
 
     <main id="top">
       <section class="hero container">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> جرّبه 7 أيام مجانًا — من غير بيانات دفع</p>
+          <p class="pill"><span class="status-dot"></span> جرّبه 7 أيام مجانًا — من غير بيانات دفع</p>
           <h1>محل الكاش بتاعك،<br /><em>من غير دفاتر.</em></h1>
           <p class="hero-lead">
-            خطوطك والليميت والعمولات وجرد الدرج والخوارج في برنامج واحد على Android وWindows.
+            خطوطك والليميت والعمولات وجرد الدرج والخوارج في برنامج واحد.
             تسجّل العملية والباقي بيتحسب لوحده، حتى لو النت فصل.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#download">حمّل وجرّب مجانًا <span>←</span></a>
-            <a class="button button-ghost" href="#pricing">شوف الأسعار <span>↓</span></a>
-          </div>
-          <div class="hero-points">
-            <span><b>✓</b> 7 أيام بكل المميزات</span>
-            <span><b>✓</b> شغال من غير نت</span>
-            <span><b>✓</b> موبايل وتابلت وكمبيوتر</span>
-            <span><b>✓</b> دعم مباشر على واتساب</span>
-          </div>
-        </div>
 
-        <div class="hero-panel glass-card" aria-label="حالة آخر إصدار">
-          <div class="panel-topline">
-            <span class="live-label"><span class="status-dot"></span> حالة الإصدار</span>
-            <span class="panel-lock">آمن ومحدّث</span>
+          <div id="hero-cta" class="hero-cta">
+            <a id="hero-android" class="button button-primary button-big" href="#download" data-dl="android"><svg class="dl-icon"><use href="#i-download" /></svg><span data-label>تحميل للأندرويد</span></a>
+            <a id="hero-windows" class="button button-secondary button-big" href="#download" data-dl="windows"><svg class="dl-icon"><use href="#i-download" /></svg><span data-label>تحميل للويندوز</span></a>
           </div>
-          <div class="version-orb"><img src="assets/limitx-icon.png" alt="" /></div>
-          <p class="panel-kicker">أحدث نسخة من LimitX</p>
-          <h2 id="latest-version">جارِ التحقق...</h2>
-          <p id="release-notes" class="panel-note">بنجيب بيانات الإصدار من السيرفر الرسمي.</p>
+          <p id="hero-meta" class="hero-meta">Android وWindows</p>
+
+          <div id="inapp-note" class="notice" hidden>
+            <span><strong>التحميل ممكن ما يشتغلش من جوه فيسبوك أو إنستجرام.</strong> افتح الصفحة في Chrome وحمّل من هناك.</span>
+            <a id="open-in-chrome" class="button button-small button-outline" href="#download">افتح في Chrome</a>
+          </div>
+          <div id="ios-note" class="notice" hidden>
+            <span><strong>LimitX شغال على أندرويد وويندوز.</strong> ابعت الرابط لنفسك وافتحه على جهاز المحل.</span>
+            <a id="share-whatsapp" class="button button-small button-outline" href="https://wa.me/" target="_blank" rel="noopener">ابعت الرابط على واتساب</a>
+          </div>
           <div id="app-update-context" class="update-context" hidden>
             <strong>جاي من داخل التطبيق؟</strong>
             <span>احفظ نسخة احتياطية قبل تحديث Android، ثم ثبّت النسخة الجديدة.</span>
           </div>
-          <a class="button button-primary button-wide" href="#download">اختار جهازك للتحميل</a>
-          <p class="panel-footnote">التحديثات الرسمية تظهر هنا أولًا.</p>
+
+          <ul class="hero-points">
+            <li>7 أيام بكل المميزات</li>
+            <li>شغال من غير نت</li>
+            <li>موبايل وتابلت وكمبيوتر</li>
+            <li>دعم مباشر على واتساب</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img class="desk-shot" src="assets/shot-desktop.jpg" alt="" width="1200" height="750" />
+          <div class="phone"><img src="assets/shot-ops.jpg" alt="" width="600" height="1298" /></div>
         </div>
       </section>
 
-      <section id="features" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">مصمم لشغل المحل الحقيقي</p>
-          <h2>كل اللي تحتاجه في مكان واحد.</h2>
-          <p>بدل الدفتر والآلة الحاسبة: كل عملية بتتسجل مرة واحدة، والأرصدة والعمولات والجرد بيتحسبوا لوحدهم.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-card-highlight">
-            <span class="feature-icon">▣</span>
-            <h3>الخطوط والليميت</h3>
-            <p>كل خطوطك وأرصدتها في شاشة واحدة، وتعرف الباقي من الليميت اليومي والشهري قبل ما تسحب.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">٪</span>
-            <h3>العمولات والخوارج</h3>
-            <p>العمولة بتتحسب مع كل سحب وإيداع، ودفتر الخوارج مربوط بالعمليات فمفيش دين بيتنسي.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">◈</span>
-            <h3>الجرد والموظفين</h3>
-            <p>كل كاشير برقم سري خاص بيه، وجرد الدرج وقت قفل الشيفت بيبيّن أي عجز أو زيادة.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">⌁</span>
-            <h3>من غير نت وبنسخة احتياطية</h3>
-            <p>الشغل اليومي كله على الجهاز من غير انتظار اتصال، ونسخة احتياطية ترجّع بياناتك على أي جهاز جديد.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="section section-muted">
-        <div class="container">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">ابدأ في دقائق</p>
-            <h2>من التحميل لأول عملية.</h2>
-          </div>
-          <div class="steps-grid">
-            <article class="step-card"><span>01</span><h3>حمّل النسخة</h3><p>اختار Android أو Windows من قسم التحميل.</p></article>
-            <article class="step-card"><span>02</span><h3>اعمل حسابك</h3><p>البرنامج بيمشي معاك خطوة بخطوة: رأس المال، الخطوط، العمولة، والموظفين.</p></article>
-            <article class="step-card"><span>03</span><h3>جرّب 7 أيام</h3><p>كل المميزات مفتوحة، وفيه وضع تجربة تتعلم عليه من غير ما يأثر على شغلك.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">الأسعار</p>
-          <h2>أول 7 أيام مجانًا، وبعدها اختار باقتك.</h2>
-          <p>كل الباقات فيها كل المميزات على جهاز واحد. الدفع بفودافون كاش من جوه البرنامج، والاشتراك بيتفعّل بعد مراجعة التحويل.</p>
-        </div>
-        <div class="price-grid">
-          <article class="price-card">
-            <h3>شهري</h3>
-            <p class="price"><b>299</b> ج.م</p>
-            <p class="price-note">شهر واحد</p>
-          </article>
-          <article class="price-card">
-            <h3>3 شهور</h3>
-            <p class="price"><b>799</b> ج.م</p>
-            <p class="price-note">266 ج.م في الشهر — توفّر 98</p>
-          </article>
-          <article class="price-card">
-            <h3>6 شهور</h3>
-            <p class="price"><b>1,499</b> ج.م</p>
-            <p class="price-note">250 ج.م في الشهر — توفّر 295</p>
-          </article>
-          <article class="price-card price-card-best">
-            <span class="price-tag">الأوفر</span>
-            <h3>سنوي</h3>
-            <p class="price"><b>2,499</b> ج.م</p>
-            <p class="price-note">208 ج.م في الشهر — توفّر 1,089</p>
-          </article>
-        </div>
-        <div class="backup-callout">
-          <span class="callout-icon">٪</span>
-          <div><strong>خصم 20% للمشتركين الجدد</strong><p>العرض بيظهر جوه البرنامج من رابع يوم في التجربة لحد آخرها، على أي باقة.</p></div>
-          <a href="#download">ابدأ التجربة ←</a>
-        </div>
-      </section>
-
-      <section id="download" class="section section-muted download-section">
+      <section id="screens" class="section section-muted">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">التحميل الرسمي</p>
-            <h2>اختار جهازك.</h2>
-            <p>الروابط بتتحدث تلقائيًا مع آخر إصدار منشور من LimitX.</p>
+            <p class="eyebrow">البرنامج من جوه</p>
+            <h2>كل اللي المحل محتاجه في مكان واحد.</h2>
+            <p>بدل الدفتر والآلة الحاسبة: العملية بتتسجل مرة واحدة، والأرصدة والعمولات والجرد بيتحسبوا لوحدهم.</p>
           </div>
-          <div class="download-grid">
-            <article class="download-card" data-platform-card="android">
-              <div class="download-card-top"><span class="platform-icon">▦</span><span class="platform-tag">للموبايل والتابلت</span></div>
-              <h3>LimitX للأندرويد</h3>
-              <p>ملف APK للتثبيت المباشر على الموبايل أو التابلت.</p>
-              <a id="download-android" class="button button-primary button-wide is-loading" href="#download" aria-disabled="true">تحميل APK <span>↓</span></a>
-              <small>Android 8.0 أو أحدث — <a class="inline-link" href="#install-android">طريقة التثبيت</a></small>
+          <div class="screens">
+            <article class="screen-card">
+              <div class="phone phone-small"><img src="assets/shot-limits.jpg" alt="شاشة الخطوط والليميت في LimitX" width="560" height="840" loading="lazy" /></div>
+              <h3>الخطوط والليميت</h3>
+              <p>كل خطوطك وأرصدتها قدامك، وتعرف الباقي من اليومي والشهري قبل ما تسحب.</p>
             </article>
-            <article class="download-card" data-platform-card="windows">
-              <div class="download-card-top"><span class="platform-icon">▣</span><span class="platform-tag">للكمبيوتر</span></div>
-              <h3>LimitX للويندوز</h3>
-              <p>مثبّت Windows كامل، وبيحدّث النسخة الحالية مع الحفاظ على بيانات الجهاز.</p>
-              <a id="download-windows" class="button button-secondary button-wide is-loading" href="#download" aria-disabled="true">تحميل Setup <span>↓</span></a>
-              <small>Windows 10 أو أحدث — 64-bit — <a class="inline-link" href="#install-windows">طريقة التثبيت</a></small>
+            <article class="screen-card">
+              <div class="phone phone-small"><img src="assets/shot-fees.jpg" alt="شاشة العمولات في LimitX" width="560" height="840" loading="lazy" /></div>
+              <h3>العمولات</h3>
+              <p>العمولة بتتحسب مع كل سحب وإيداع، وتشوف مكسب اليوم والشهر في أي لحظة.</p>
+            </article>
+            <article class="screen-card">
+              <div class="phone phone-small"><img src="assets/shot-jard.jpg" alt="شاشة الجرد في LimitX" width="560" height="840" loading="lazy" /></div>
+              <h3>جرد الدرج</h3>
+              <p>تكتب الفلوس اللي في الدرج، والبرنامج يقولك فيه عجز ولا زيادة وبكام.</p>
+            </article>
+            <article class="screen-card">
+              <div class="phone phone-small"><img src="assets/shot-log.jpg" alt="سجل العمليات في LimitX" width="560" height="840" loading="lazy" /></div>
+              <h3>سجل كل حركة</h3>
+              <p>كل عملية باسم اللي عملها ووقتها، وتقدر تدوّر على أي رقم أو مبلغ.</p>
             </article>
           </div>
-          <div class="backup-callout">
-            <span class="callout-icon">✓</span>
-            <div><strong>قبل تحديث Android من نسخة قديمة</strong><p>استخدم زر التحديث داخل التطبيق لحفظ نسخة أمان، واحفظ الملف في Files أو Drive قبل إزالة النسخة القديمة.</p></div>
-            <a href="#faq">اعرف التفاصيل ←</a>
+          <div class="benefits">
+            <article class="card benefit"><span class="benefit-icon">⌁</span><div><h3>شغال من غير نت</h3><p>الشغل اليومي كله على الجهاز، من غير انتظار اتصال.</p></div></article>
+            <article class="card benefit"><span class="benefit-icon">◈</span><div><h3>كل كاشير برقم سري</h3><p>كل موظف بحسابه، وكل حركة بتتسجل باسمه.</p></div></article>
+            <article class="card benefit"><span class="benefit-icon">↻</span><div><h3>نسخة احتياطية</h3><p>بياناتك ترجع على أي جهاز جديد في دقايق.</p></div></article>
           </div>
         </div>
       </section>
 
-      <section id="install" class="section container">
+      <section id="how-it-works" class="section container">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">ابدأ في دقائق</p>
+          <h2>من التحميل لأول عملية.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span>1</span><h3>حمّل البرنامج</h3><p>على الموبايل أو التابلت أو الكمبيوتر اللي في المحل.</p></article>
+          <article class="step-card"><span>2</span><h3>اعمل حسابك</h3><p>البرنامج بيمشي معاك خطوة بخطوة: رأس المال، الخطوط، العمولة، والموظفين.</p></article>
+          <article class="step-card"><span>3</span><h3>جرّب 7 أيام</h3><p>كل المميزات مفتوحة، وفيه وضع تجربة تتعلم عليه من غير ما يأثر على شغلك.</p></article>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section-muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">الأسعار</p>
+            <h2>أول 7 أيام مجانًا، وبعدها اختار باقتك.</h2>
+            <p>كل الباقات فيها كل المميزات على جهاز واحد. الدفع بفودافون كاش من جوه البرنامج، والاشتراك بيتفعّل بعد مراجعة التحويل.</p>
+          </div>
+          <div class="price-grid">
+            <article class="price-card">
+              <h3>شهري</h3>
+              <p class="price"><b>299</b> ج.م</p>
+              <p class="price-note">شهر واحد</p>
+            </article>
+            <article class="price-card">
+              <h3>3 شهور</h3>
+              <p class="price"><b>799</b> ج.م</p>
+              <p class="price-note">266 ج.م في الشهر</p>
+            </article>
+            <article class="price-card">
+              <h3>6 شهور</h3>
+              <p class="price"><b>1,499</b> ج.م</p>
+              <p class="price-note">250 ج.م في الشهر</p>
+            </article>
+            <article class="price-card price-card-best">
+              <span class="price-tag">الأوفر</span>
+              <h3>سنوي</h3>
+              <p class="price"><b>2,499</b> ج.م</p>
+              <p class="price-note">208 ج.م في الشهر — توفّر 1,089</p>
+            </article>
+          </div>
+          <div class="callout">
+            <span class="callout-icon">٪</span>
+            <div><strong>خصم 20% للمشتركين الجدد</strong><p>العرض بيظهر جوه البرنامج من رابع يوم في التجربة لحد آخرها، على أي باقة.</p></div>
+            <a href="#download" data-dl="auto" data-short="1"><span data-label>ابدأ التجربة</span> ←</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section container">
         <div class="section-heading">
-          <p class="eyebrow">طريقة التثبيت</p>
-          <h2>الجهاز هيسألك مرة واحدة، وده طبيعي.</h2>
-          <p>LimitX بينزل من موقعنا مباشرة مش من المتجر، فالأندرويد والويندوز بيطلبوا موافقتك قبل التثبيت. دي الخطوات بالظبط.</p>
+          <p class="eyebrow">التحميل الرسمي — الإصدار <span data-version>1.0.68</span></p>
+          <h2>اختار جهازك وحمّل على طول.</h2>
+          <p>الروابط بتتحدث تلقائيًا مع آخر إصدار منشور من LimitX.</p>
         </div>
-        <div class="install-grid">
-          <article id="install-android" class="install-card">
-            <h3>على الأندرويد</h3>
-            <ol>
-              <li>دوس <b>تحميل APK</b>. لو المتصفح قال إن الملف ممكن يكون ضار، اختار <b>التنزيل على أي حال</b> (Download anyway).</li>
-              <li>افتح الملف بعد ما ينزل. هتظهر رسالة إن التثبيت من المصدر ده مش مسموح: دوس <b>الإعدادات</b> (Settings).</li>
-              <li>فعّل <b>السماح من هذا المصدر</b> (Allow from this source) وارجع.</li>
-              <li>دوس <b>تثبيت</b> (Install). لو Play Protect سأل، اختار <b>التثبيت على أي حال</b> (Install anyway).</li>
-            </ol>
-            <div class="mock mock-android" aria-hidden="true">
-              <p>لدواعي الأمان، غير مسموح لهاتفك بتثبيت تطبيقات غير معروفة من هذا المصدر.</p>
-              <div class="mock-actions"><span>إلغاء</span><span class="mock-go">الإعدادات</span></div>
-            </div>
+        <div class="download-grid">
+          <article class="download-card" data-platform-card="android">
+            <div class="download-card-top"><span class="platform-icon"><svg><use href="#i-phone" /></svg></span><span class="platform-tag">للموبايل والتابلت</span></div>
+            <h3>LimitX للأندرويد</h3>
+            <p>ملف APK للتثبيت المباشر على الموبايل أو التابلت.</p>
+            <a id="download-android" class="button button-primary button-wide" href="https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-App-1.0.68.apk" data-dl="android"><svg class="dl-icon"><use href="#i-download" /></svg>تحميل APK</a>
+            <small>حوالي 62 ميجا — Android 8.0 أو أحدث — <a class="inline-link" href="#install-android">طريقة التثبيت</a></small>
           </article>
-          <article id="install-windows" class="install-card">
-            <h3>على الويندوز</h3>
-            <ol>
-              <li>دوس <b>تحميل Setup</b>. لو المتصفح وقف التنزيل، افتح قايمة التنزيلات واختار <b>Keep</b> ثم <b>Keep anyway</b>.</li>
-              <li>شغّل الملف. لو ظهرت شاشة زرقا <b>Windows protected your PC</b>، دوس <b>More info</b>.</li>
-              <li>دوس <b>Run anyway</b> وكمّل التثبيت عادي.</li>
-              <li>لو البرنامج متثبت قبل كده، ثبّت فوقه من غير ما تمسح القديم وبياناتك هتفضل زي ما هي.</li>
-            </ol>
-            <div class="mock mock-windows" aria-hidden="true" dir="ltr">
-              <strong>Windows protected your PC</strong>
-              <p>Microsoft Defender SmartScreen prevented an unrecognized app from starting. <u>More info</u></p>
-              <div class="mock-actions"><span class="mock-go">Run anyway</span><span>Don't run</span></div>
-            </div>
+          <article class="download-card" data-platform-card="windows">
+            <div class="download-card-top"><span class="platform-icon"><svg><use href="#i-desktop" /></svg></span><span class="platform-tag">للكمبيوتر</span></div>
+            <h3>LimitX للويندوز</h3>
+            <p>مثبّت Windows كامل، وبيحدّث النسخة الحالية مع الحفاظ على بيانات الجهاز.</p>
+            <a id="download-windows" class="button button-primary button-wide" href="https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-Setup.exe" data-dl="windows"><svg class="dl-icon"><use href="#i-download" /></svg>تحميل Setup</a>
+            <small>حوالي 13 ميجا — Windows 10 أو أحدث 64-bit — <a class="inline-link" href="#install-windows">طريقة التثبيت</a></small>
           </article>
         </div>
-        <p class="install-help">وقفت في أي خطوة؟ <a class="text-link" href="https://wa.me/201002010877" target="_blank" rel="noopener">ابعتلنا صورة الشاشة على واتساب ←</a></p>
       </section>
 
-      <section id="faq" class="section section-muted">
-        <div class="container faq-layout">
-          <div class="section-heading compact-heading"><p class="eyebrow">محتاج تعرف إيه؟</p><h2>أسئلة سريعة.</h2><p>لو مش لاقي إجابتك، كلمنا مباشرة.</p><a class="text-link" href="https://wa.me/201002010877" target="_blank" rel="noopener">كلم الدعم على WhatsApp ←</a></div>
+      <section id="install" class="section section-muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">طريقة التثبيت</p>
+            <h2>الجهاز هيسألك مرة واحدة، وده طبيعي.</h2>
+            <p>LimitX بينزل من موقعنا مباشرة مش من المتجر، فالأندرويد والويندوز بيطلبوا موافقتك قبل التثبيت. دي الخطوات بالظبط.</p>
+          </div>
+          <div class="install-grid">
+            <article id="install-android" class="install-card">
+              <h3>على الأندرويد</h3>
+              <ol>
+                <li>لو المتصفح قال إن الملف ممكن يكون ضار، اختار <b>التنزيل على أي حال</b> (Download anyway).</li>
+                <li>افتح الملف بعد ما ينزل. هتظهر رسالة إن التثبيت من المصدر ده مش مسموح: دوس <b>الإعدادات</b> (Settings).</li>
+                <li>فعّل <b>السماح من هذا المصدر</b> (Allow from this source) وارجع.</li>
+                <li>دوس <b>تثبيت</b> (Install). لو Play Protect سأل، اختار <b>التثبيت على أي حال</b> (Install anyway).</li>
+              </ol>
+              <div class="mock mock-android" aria-hidden="true">
+                <p>لدواعي الأمان، غير مسموح لهاتفك بتثبيت تطبيقات غير معروفة من هذا المصدر.</p>
+                <div class="mock-actions"><span>إلغاء</span><span class="mock-go">الإعدادات</span></div>
+              </div>
+            </article>
+            <article id="install-windows" class="install-card">
+              <h3>على الويندوز</h3>
+              <ol>
+                <li>لو المتصفح وقف التنزيل، افتح قايمة التنزيلات واختار <b>Keep</b> ثم <b>Keep anyway</b>.</li>
+                <li>شغّل الملف. لو ظهرت شاشة زرقا <b>Windows protected your PC</b>، دوس <b>More info</b>.</li>
+                <li>دوس <b>Run anyway</b> وكمّل التثبيت عادي.</li>
+                <li>لو البرنامج متثبت قبل كده، ثبّت فوقه من غير ما تمسح القديم وبياناتك هتفضل زي ما هي.</li>
+              </ol>
+              <div class="mock mock-windows" aria-hidden="true" dir="ltr">
+                <strong>Windows protected your PC</strong>
+                <p>Microsoft Defender SmartScreen prevented an unrecognized app from starting. <u>More info</u></p>
+                <div class="mock-actions"><span class="mock-go">Run anyway</span><span>Don't run</span></div>
+              </div>
+            </article>
+          </div>
+          <p class="install-help">وقفت في أي خطوة؟ <a class="text-link" href="https://wa.me/201002010877" target="_blank" rel="noopener">ابعتلنا صورة الشاشة على واتساب ←</a></p>
+        </div>
+      </section>
+
+      <section id="faq" class="section container">
+        <div class="faq-layout">
+          <div class="section-heading compact-heading"><p class="eyebrow">محتاج تعرف إيه؟</p><h2>أسئلة سريعة.</h2><p>لو مش لاقي إجابتك، كلمنا مباشرة.</p><a class="text-link" href="https://wa.me/201002010877" target="_blank" rel="noopener">كلم الدعم على واتساب ←</a></div>
           <div class="faq-list">
             <details open><summary>التجربة المجانية فيها إيه؟</summary><p>7 أيام بكل مميزات البرنامج من غير أي بيانات دفع. بعد ما تخلص، البرنامج بيطلب الاشتراك عشان تكمّل، وبياناتك بتفضل على جهازك.</p></details>
-            <details><summary>هل LimitX يحتاج الإنترنت دائمًا؟</summary><p>لا. الشغل اليومي والبيانات المحلية يفضلوا متاحين أوفلاين. التطبيق يحتاج اتصالًا دوريًا للتحقق من الاشتراك، وبعد نجاح التحقق يتيح فترة العمل المحددة.</p></details>
+            <details><summary>هل LimitX محتاج نت على طول؟</summary><p>لا. الشغل اليومي والبيانات على الجهاز وبيشتغلوا من غير نت. البرنامج محتاج اتصال كل فترة بس عشان يتأكد من الاشتراك.</p></details>
             <details><summary>ليه الجهاز بيطلّع تحذير وقت التثبيت؟</summary><p>لأن البرنامج بينزل من موقعنا مباشرة مش من متجر التطبيقات، وأي برنامج بالشكل ده بيظهرله نفس السؤال. الخطوات مشروحة في <a class="inline-link" href="#install">طريقة التثبيت</a>.</p></details>
-            <details><summary>هل أقدر أشتغل على أكتر من جهاز؟</summary><p>الاشتراك لجهاز واحد. تقدر تنقل شغلك لجهاز جديد في أي وقت بالنسخة الاحتياطية.</p></details>
-            <details><summary>هل أقدر أنقل بياناتي لجهاز جديد؟</summary><p>نعم. استخدم النسخة السحابية أو صدّر ملف من شاشة النسخ الاحتياطي، ثم استرجعه بعد تسجيل الدخول على الجهاز الجديد.</p></details>
-            <details><summary>ماذا يحدث عند تحديث Android؟</summary><p>التطبيق ينشئ نسخة أمان قبل فتح التحديث. عند الانتقال من النسخ القديمة إلى توقيع LimitX الجديد، احفظ النسخة خارج التطبيق، ثم ثبّت النسخة الجديدة واسترجع بياناتك.</p></details>
-            <details><summary>هل التحميل من مصدر رسمي؟</summary><p>نعم. هذه الصفحة تقرأ رقم الإصدار من سيرفر LimitX وتوجهك إلى ملفات الإصدار الرسمية.</p></details>
+            <details><summary>أقدر أشتغل على أكتر من جهاز؟</summary><p>الاشتراك لجهاز واحد. تقدر تنقل شغلك لجهاز جديد في أي وقت بالنسخة الاحتياطية.</p></details>
+            <details><summary>أقدر أنقل بياناتي لجهاز جديد؟</summary><p>أيوه. استخدم النسخة السحابية أو صدّر ملف من شاشة النسخ الاحتياطي، واسترجعه بعد تسجيل الدخول على الجهاز الجديد.</p></details>
+            <details><summary>إيه اللي بيحصل لما أحدّث نسخة الأندرويد؟</summary><p>البرنامج بيحفظ نسخة أمان قبل ما يفتح التحديث. لو بتنقل من نسخة قديمة جدًا، احفظ النسخة برّه البرنامج في Files أو Drive، وبعدين ثبّت النسخة الجديدة واسترجع بياناتك.</p></details>
+            <details><summary>هل التحميل من مصدر رسمي؟</summary><p>أيوه. الصفحة دي بتقرأ رقم الإصدار من سيرفر LimitX وبتوديك على ملفات الإصدار الرسمية.</p></details>
           </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-muted">
+        <div class="container">
+          <h2>جرّب LimitX في محلك النهارده.</h2>
+          <p>7 أيام بكل المميزات، من غير بيانات دفع.</p>
+          <a class="button button-primary button-big" href="#download" data-dl="auto"><svg class="dl-icon"><use href="#i-download" /></svg><span data-label>حمّل البرنامج مجانًا</span></a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <a class="brand" href="#top"><span class="brand-mark"><img src="assets/limitx-icon.png" alt="" /></span><span><strong>LimitX</strong><small>إدارة محل الكاش</small></span></a>
+        <a class="brand" href="#top"><span class="brand-mark"><img src="assets/limitx-icon.png" alt="" width="34" height="34" /></span><span><strong>LimitX</strong><small>إدارة محل الكاش</small></span></a>
         <div class="footer-links"><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a><a href="https://wa.me/201002010877" target="_blank" rel="noopener">الدعم</a></div>
         <span class="copyright">© 2026 LimitX</span>
       </div>
     </footer>
-    <script src="app.js" defer></script>
+
+    <div id="sticky-cta" class="sticky-cta">
+      <a class="button button-primary button-wide" href="#download" data-dl="auto"><svg class="dl-icon"><use href="#i-download" /></svg><span data-label>حمّل البرنامج مجانًا</span></a>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js?v=3" defer></script>
   </body>
 </html>
