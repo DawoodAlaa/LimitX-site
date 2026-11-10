@@ -119,7 +119,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .step-card p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.85; }
 
 /* الأسعار */
-.price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .price-card { position: relative; padding: 26px 22px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
 .price-card-best { border-color: rgba(245, 166, 35, .55); background: linear-gradient(160deg, rgba(245, 166, 35, .13), var(--surface) 70%); }
 .price-card h3 { margin: 0; color: var(--muted); font-size: 16px; }
@@ -219,7 +219,6 @@ details p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; line-heigh
   .hero-visual { min-height: 0; }
   .desk-shot { display: none; }
   .phone { width: 250px; }
-  .price-grid { grid-template-columns: repeat(2, 1fr); }
   .faq-layout { grid-template-columns: 1fr; gap: 28px; }
   .benefits { grid-template-columns: 1fr; margin-top: 36px; }
   .screens { display: flex; gap: 16px; margin: 0 -20px; padding: 4px 20px 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
@@ -239,7 +238,7 @@ details p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; line-heigh
   .hero-meta { text-align: center; }
   .hero-points { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; font-size: 13.5px; }
   .section { padding: 64px 0; }
-  .steps-grid, .download-grid, .install-grid { grid-template-columns: 1fr; }
+  .steps-grid, .download-grid, .install-grid, .price-grid { grid-template-columns: 1fr; }
   .screens { margin: 0 -16px; padding: 4px 16px 14px; }
   .price-card { padding: 20px 16px; }
   .price b { font-size: 30px; }
