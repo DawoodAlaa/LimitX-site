@@ -2,9 +2,9 @@
   'use strict';
 
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
-  const FALLBACK_VERSION = '1.0.57';
-  const FALLBACK_ANDROID_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.57/LimitX-App-1.0.57.apk';
-  const FALLBACK_WINDOWS_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.57/LimitX-Setup.exe';
+  const FALLBACK_VERSION = '1.0.68';
+  const FALLBACK_ANDROID_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-App-1.0.68.apk';
+  const FALLBACK_WINDOWS_URL = 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-Setup.exe';
   const FALLBACK_NOTES = 'آخر نسخة رسمية من LimitX متاحة للتحميل الآن.';
 
   const byId = (id) => document.getElementById(id);

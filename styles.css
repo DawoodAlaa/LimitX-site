@@ -38,7 +38,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-header { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; min-width: max-content; }
-.brand-mark { width: 40px; height: 40px; display: grid; place-items: center; overflow: hidden; border-radius: 12px; background: linear-gradient(145deg, #f56a77, #a9284a); box-shadow: 0 8px 24px rgba(210, 47, 73, .28); }
+.brand-mark { width: 40px; height: 40px; display: grid; place-items: center; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 24px rgba(210, 47, 73, .28); }
 .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
 .brand strong { display: block; font-size: 18px; line-height: 1.1; letter-spacing: -.3px; }
 .brand small { display: block; margin-top: 2px; color: var(--muted-2); font-size: 9px; line-height: 1.1; }
@@ -74,7 +74,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .live-label { display: inline-flex; align-items: center; gap: 8px; }
 .panel-lock { padding: 3px 8px; border: 1px solid rgba(67, 194, 138, .28); border-radius: 30px; color: var(--green); font-size: 9px; }
 .version-orb { width: 142px; height: 142px; display: grid; place-items: center; margin: 34px auto 22px; border: 1px solid rgba(221, 185, 78, .32); border-radius: 50%; background: radial-gradient(circle at 35% 30%, #485775, #15233a 60%, #0e1829); box-shadow: 0 0 0 11px rgba(228, 184, 79, .055), 0 0 0 22px rgba(228, 184, 79, .025); }
-.version-orb span { color: var(--gold); font-size: 38px; font-weight: 900; letter-spacing: -3px; }
+.version-orb img { width: 84px; height: 84px; border-radius: 22px; box-shadow: 0 10px 30px rgba(0, 0, 0, .4); }
 .panel-kicker { margin: 0; color: var(--muted-2); text-align: center; font-size: 10px; }
 .hero-panel h2 { margin: 4px 0 8px; text-align: center; font-size: 25px; letter-spacing: -.5px; }
 .panel-note { min-height: 47px; margin: 0 auto 18px; color: var(--muted); text-align: center; font-size: 11px; line-height: 1.8; }
@@ -139,6 +139,39 @@ details p { margin: 0 0 14px; color: var(--muted); font-size: 11px; line-height:
 .legal-back { display: inline-flex; margin-bottom: 25px; color: var(--muted); font-size: 11px; }
 .legal-back:hover { color: var(--text); }
 
+.inline-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.price-card { position: relative; padding: 24px 20px; border: 1px solid var(--line); border-radius: 17px; background: rgba(18, 31, 49, .58); }
+.price-card-best { border-color: rgba(245, 166, 35, .5); background: linear-gradient(160deg, rgba(245, 166, 35, .12), rgba(18, 31, 49, .62)); }
+.price-card h3 { margin: 0; font-size: 15px; color: var(--muted); }
+.price { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+.price b { color: var(--text); font-size: 34px; font-weight: 900; letter-spacing: -1px; }
+.price-note { margin: 6px 0 0; color: var(--muted-2); font-size: 11px; }
+.price-card-best .price-note { color: var(--gold); }
+.price-tag { position: absolute; top: 14px; left: 14px; padding: 3px 10px; border-radius: 20px; color: #1a1205; background: var(--gold); font-size: 10px; font-weight: 800; }
+.install-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 17px; align-items: start; }
+.install-card { padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: rgba(18, 31, 49, .58); scroll-margin-top: 20px; }
+.install-card h3 { margin: 0 0 12px; font-size: 19px; }
+.install-card ol { margin: 0; padding-right: 20px; color: var(--muted); font-size: 13px; line-height: 2; }
+.install-card li { margin-bottom: 6px; }
+.install-card li::marker { color: var(--red); font-weight: 900; }
+.install-card b { color: var(--text); }
+.mock { margin-top: 18px; padding: 16px 18px; border-radius: 14px; font-size: 12px; line-height: 1.8; }
+.mock p { margin: 0; }
+.mock-actions { display: flex; gap: 10px; margin-top: 14px; }
+.mock-actions span { padding: 6px 14px; border-radius: 8px; font-weight: 700; }
+.mock-android { color: #e8e8f0; background: #2a2a33; }
+.mock-android .mock-actions { justify-content: flex-end; }
+.mock-android .mock-actions span { color: #9bbcff; }
+.mock-windows { color: #fff; background: #0a63c9; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; text-align: left; }
+.mock-windows strong { display: block; margin-bottom: 6px; font-size: 16px; font-weight: 600; }
+.mock-windows .mock-actions { justify-content: flex-end; }
+.mock-windows .mock-actions span { border: 2px solid rgba(255, 255, 255, .85); border-radius: 0; font-weight: 400; }
+.mock .mock-go { outline: 2px solid var(--gold); outline-offset: 3px; }
+.install-help { margin: 22px 0 0; color: var(--muted); font-size: 12px; }
+.install-help .text-link { margin-top: 0; font-size: 12px; }
+html { scroll-padding-top: 16px; }
+
 [data-platform-card].is-recommended { border-color: rgba(67, 194, 138, .62); box-shadow: 0 0 0 3px rgba(67, 194, 138, .08), var(--shadow); }
 [data-platform-card].is-recommended::after { content: 'مناسب لجهازك'; display: block; margin-top: 12px; color: var(--green); font-size: 9px; font-weight: 800; }
 .is-loading { opacity: .7; pointer-events: none; }
@@ -146,7 +179,7 @@ details p { margin: 0 0 14px; color: var(--muted); font-size: 11px; line-height:
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; gap: 42px; padding-top: 45px; }
   .hero-panel { max-width: 600px; width: 100%; margin: 0 auto; }
-  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid, .price-grid { grid-template-columns: repeat(2, 1fr); }
   .faq-layout { grid-template-columns: 1fr; gap: 32px; }
 }
 @media (max-width: 620px) {
@@ -161,7 +194,9 @@ details p { margin: 0 0 14px; color: var(--muted); font-size: 11px; line-height:
   .hero-actions .button { width: 100%; }
   .hero-points { display: grid; gap: 6px; }
   .section { padding: 70px 0; }
-  .feature-grid, .steps-grid, .download-grid { grid-template-columns: 1fr; }
+  .feature-grid, .steps-grid, .download-grid, .install-grid { grid-template-columns: 1fr; }
+  .price-card { padding: 20px 16px; }
+  .price b { font-size: 28px; }
   .feature-card { min-height: 0; }
   .download-card p { min-height: 0; }
   .backup-callout { align-items: flex-start; flex-wrap: wrap; }
