@@ -4,9 +4,9 @@
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
   const SITE_URL = 'https://dawoodalaa.github.io/LimitX-site/';
   const FALLBACK = {
-    version: '1.0.68',
-    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-App-1.0.68.apk',
-    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.68/LimitX-Setup.exe',
+    version: '1.0.69',
+    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.69/LimitX-App-1.0.69.apk',
+    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.69/LimitX-Setup.exe',
   };
   const LABELS = {
     android: { main: 'حمّل للأندرويد مجانًا', alt: 'أو حمّل نسخة الأندرويد', short: 'تحميل للأندرويد', meta: 'ملف APK · حوالي 62 ميجا · Android 8 أو أحدث' },
