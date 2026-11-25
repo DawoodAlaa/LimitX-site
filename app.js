@@ -4,9 +4,9 @@
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
   const SITE_URL = 'https://dawoodalaa.github.io/LimitX-site/';
   const FALLBACK = {
-    version: '1.1.0',
-    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.1.0/LimitX-App-1.1.0.apk',
-    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.1.0/LimitX-Setup.exe',
+    version: '1.2.0',
+    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.0/LimitX-App-1.2.0.apk',
+    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.0/LimitX-Setup.exe',
     reader: 'https://github.com/DawoodAlaa/limitx-releases/releases/latest/download/LimitX-Reader.apk',
   };
   const LABELS = {
@@ -155,7 +155,7 @@
       const okUrl = (u) => typeof u === 'string' && u.startsWith('https://github.com/DawoodAlaa/limitx-releases/');
       if (okUrl(payload.apk_url)) urls.android = payload.apk_url;
       if (okUrl(payload.windows_url)) urls.windows = payload.windows_url;
-      if (okUrl(payload.reader_apk_url)) urls.reader = payload.reader_apk_url;
+      if (okUrl(payload.reader_app_url)) urls.reader = payload.reader_app_url;
       applyLinks();
       if (typeof payload.version === 'string' && /^\d+\.\d+\.\d+$/.test(payload.version)) renderVersion(payload.version);
     } catch (error) {
