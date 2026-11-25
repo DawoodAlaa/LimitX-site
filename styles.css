@@ -146,6 +146,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .download-card h3 { margin: 0; font-size: 22px; }
 .download-card p { min-height: 54px; margin: 8px 0 18px; color: var(--muted); font-size: 14px; line-height: 1.85; }
 .download-card small { display: block; margin-top: 12px; color: var(--muted-2); font-size: 12.5px; text-align: center; }
+.reader-card { display: flex; align-items: center; gap: 22px; margin-top: 18px; padding: 26px 28px; border: 1px solid rgba(245, 166, 35, .34); border-radius: 22px; background: linear-gradient(160deg, rgba(245, 166, 35, .08), var(--surface) 65%); }
+.reader-card .platform-icon { flex: 0 0 auto; align-self: flex-start; color: var(--gold); background: rgba(245, 166, 35, .13); }
+.reader-body { flex: 1 1 auto; }
+.reader-body h3 { margin: 10px 0 0; font-size: 21px; }
+.reader-body p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.85; }
+.reader-body ul { margin: 10px 0 0; padding-right: 20px; color: var(--muted); font-size: 13.5px; line-height: 1.9; }
+.reader-body li::marker { color: var(--gold); }
+.reader-action { flex: 0 0 250px; }
+.reader-action small { display: block; margin-top: 12px; color: var(--muted-2); font-size: 12.5px; text-align: center; }
 .inline-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 [data-platform-card].is-recommended { border-color: rgba(0, 192, 122, .6); box-shadow: 0 0 0 3px rgba(0, 192, 122, .09); }
 [data-platform-card].is-recommended .platform-tag { color: #06281b; background: var(--green); font-weight: 800; }
@@ -245,6 +254,8 @@ details p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; line-heigh
   .price-tag { top: 12px; left: 12px; }
   .download-card, .install-card { padding: 22px 18px; }
   .download-card p { min-height: 0; }
+  .reader-card { flex-direction: column; align-items: stretch; gap: 16px; padding: 22px 18px; }
+  .reader-action { flex: 0 0 auto; }
   .callout { align-items: flex-start; flex-wrap: wrap; }
   .callout > a { width: 100%; margin-right: 50px; }
   .footer-inner { align-items: flex-start; flex-wrap: wrap; }

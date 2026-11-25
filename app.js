@@ -7,6 +7,7 @@
     version: '1.0.70',
     android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.70/LimitX-App-1.0.70.apk',
     windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.70/LimitX-Setup.exe',
+    reader: 'https://github.com/DawoodAlaa/limitx-releases/releases/latest/download/LimitX-Reader.apk',
   };
   const LABELS = {
     android: { main: 'حمّل للأندرويد مجانًا', alt: 'أو حمّل نسخة الأندرويد', short: 'تحميل للأندرويد', meta: 'ملف APK · حوالي 62 ميجا · Android 8 أو أحدث' },
@@ -16,7 +17,7 @@
   const byId = (id) => document.getElementById(id);
   const params = new URLSearchParams(window.location.search);
   const ua = navigator.userAgent || '';
-  const urls = { android: FALLBACK.android, windows: FALLBACK.windows };
+  const urls = { android: FALLBACK.android, windows: FALLBACK.windows, reader: FALLBACK.reader };
 
   function detectPlatform() {
     const forced = params.get('platform');
@@ -115,7 +116,7 @@
   function afterDownloadClick(target) {
     toast('التحميل بدأ. بعد ما يخلص افتح الملف واتبع الخطوات دي.');
     window.setTimeout(() => {
-      const card = byId(`install-${target}`);
+      const card = byId(`install-${target === 'reader' ? 'android' : target}`);
       if (!card) return;
       document.querySelectorAll('.install-card').forEach((c) => c.classList.remove('is-active'));
       card.classList.add('is-active');
@@ -154,6 +155,7 @@
       const okUrl = (u) => typeof u === 'string' && u.startsWith('https://github.com/DawoodAlaa/limitx-releases/');
       if (okUrl(payload.apk_url)) urls.android = payload.apk_url;
       if (okUrl(payload.windows_url)) urls.windows = payload.windows_url;
+      if (okUrl(payload.reader_apk_url)) urls.reader = payload.reader_apk_url;
       applyLinks();
       if (typeof payload.version === 'string' && /^\d+\.\d+\.\d+$/.test(payload.version)) renderVersion(payload.version);
     } catch (error) {
