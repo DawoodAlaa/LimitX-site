@@ -4,13 +4,13 @@
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
   const SITE_URL = 'https://dawoodalaa.github.io/LimitX-site/';
   const FALLBACK = {
-    version: '1.0.70',
-    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.70/LimitX-App-1.0.70.apk',
-    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.0.70/LimitX-Setup.exe',
+    version: '1.1.0',
+    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.1.0/LimitX-App-1.1.0.apk',
+    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.1.0/LimitX-Setup.exe',
     reader: 'https://github.com/DawoodAlaa/limitx-releases/releases/latest/download/LimitX-Reader.apk',
   };
   const LABELS = {
-    android: { main: 'حمّل للأندرويد مجانًا', alt: 'أو حمّل نسخة الأندرويد', short: 'تحميل للأندرويد', meta: 'ملف APK · حوالي 62 ميجا · Android 8 أو أحدث' },
+    android: { main: 'حمّل للأندرويد مجانًا', alt: 'أو حمّل نسخة الأندرويد', short: 'تحميل للأندرويد', meta: 'ملف APK · حوالي 66 ميجا · Android 8 أو أحدث' },
     windows: { main: 'حمّل للويندوز مجانًا', alt: 'أو حمّل نسخة الويندوز', short: 'تحميل للويندوز', meta: 'ملف Setup · حوالي 13 ميجا · Windows 10 أو أحدث' },
   };
 
