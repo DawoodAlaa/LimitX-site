@@ -4,9 +4,9 @@
   const API_URL = 'https://limitx-server-production-c7b1.up.railway.app/api/version';
   const SITE_URL = 'https://dawoodalaa.github.io/LimitX-site/';
   const FALLBACK = {
-    version: '1.2.0',
-    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.0/LimitX-App-1.2.0.apk',
-    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.0/LimitX-Setup.exe',
+    version: '1.2.1',
+    android: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.1/LimitX-App-1.2.1.apk',
+    windows: 'https://github.com/DawoodAlaa/limitx-releases/releases/download/v1.2.1/LimitX-Setup.exe',
     reader: 'https://github.com/DawoodAlaa/limitx-releases/releases/latest/download/LimitX-Reader.apk',
   };
   const LABELS = {
